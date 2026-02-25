@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.lang {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &.active {
+    font-weight: 700;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
