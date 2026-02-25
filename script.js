@@ -1,21 +1,15 @@
-let fr = {
-  title: "Valérie Lapeyre",
-  subtitle1: "UX Researcher",
-  subtitle2: "En alternance chez Leetchi",
-  sectiontitle1: "Présentation",
-  sectiontitle2: "Réalisations",
-};
+function changeLang(langue) {
+  fetch(langue + ".json").then(function (response) {
+    response.json().then(function (data) {
+      Object.keys(data).forEach((cle) => {
+        document.querySelector("#" + cle).innerHTML = data[cle];
+      });
+    });
+  });
 
-let en = {
-  title: "Valérie Lapeyre",
-  subtitle1: "UX Researcher",
-  subtitle2: "Apprentice at Leetchi",
-  sectiontitle1: "Presentation",
-  sectiontitle2: "Realisations",
-};
+  document.querySelectorAll(".lang").forEach((btn) => {
+    btn.classList.remove("active");
+  });
 
-let langue = fr;
-
-Object.keys(langue).forEach((cle) => {
-  document.querySelector("#" + cle).innerHTML = langue[cle];
-});
+  document.querySelector("#btn-" + langue).classList.add("active");
+}

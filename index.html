@@ -6,13 +6,21 @@
     <title>Portfolio 2026</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="lang-toggle">
-        <button class="lang active">FR</button>
+        <button id="btn-fr" class="lang active" onclick="changeLang('fr')">
+          FR
+        </button>
         <span class="separator">|</span>
-        <button class="lang">EN</button>
+        <button id="btn-en" class="lang" onclick="changeLang('en')">EN</button>
       </div>
     </header>
     <h1 id="title">Valérie Lapeyre</h1>
