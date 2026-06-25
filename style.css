@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *,
 *::before,
 *::after {
@@ -120,4 +122,68 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+/* MAIN - PROJECTS */
+
+.projects,
+.project,
+.project-text,
+.project-subs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects {
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.project {
+  gap: 1.75rem;
+}
+
+.project-text {
+  gap: 1.25rem;
+}
+
+.project-subs {
+  gap: 0.75rem;
+}
+
+.project-img {
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-caption {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 880px) {
+  .project {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .projects {
+    margin: 0 16%;
+  }
+
+  .project-img {
+    width: 70%;
+    aspect-ratio: 1.455;
+  }
+
+  .project-text {
+    padding-left: 2rem;
+    width: 40%;
+  }
 }
