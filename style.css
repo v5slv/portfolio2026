@@ -34,12 +34,12 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.1;
 }
 
@@ -69,7 +69,7 @@ header {
   display: flex;
   padding: 1rem;
   justify-content: flex-end;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -88,6 +88,17 @@ header {
   }
 }
 
+footer {
+  margin-top: 5vh;
+}
+
+footer address {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* MAIN */
 
 main {
@@ -95,6 +106,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 0 2rem;
+  gap: 5vh;
 }
 
 /* MAIN - HERO */
@@ -110,7 +122,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 26vh;
-  padding-top: 16vh;
+  padding-top: 12vh;
 }
 
 .hero-title-logo {
@@ -121,7 +133,7 @@ main {
 
 .hero-logo {
   width: 8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .hero h1 {
@@ -136,6 +148,10 @@ main {
   gap: 0.5rem;
 }
 
+.hero-stroke {
+  width: 10rem;
+}
+
 /* MAIN - PROJECTS */
 
 .projects,
@@ -147,6 +163,10 @@ main {
   justify-content: center;
 }
 
+.project-link {
+  text-decoration: none;
+}
+
 .projects {
   gap: 3rem;
   padding: 3rem 0;
@@ -156,8 +176,9 @@ main {
   gap: 1.75rem;
 }
 
-.project-text {
-  gap: 1.25rem;
+.project-stroke {
+  margin: 0.25rem 0 0.75rem 0;
+  width: 12rem;
 }
 
 .project-subs {
@@ -186,16 +207,35 @@ main {
   }
 
   .projects {
-    margin: 0 16%;
+    margin: 0 14%;
+    gap: 6rem;
   }
 
   .project-img {
     width: 70%;
-    aspect-ratio: 1.455;
+    aspect-ratio: 1.6;
   }
 
   .project-text {
-    padding-left: 2rem;
+    padding-right: 2rem;
     width: 40%;
   }
+}
+
+.project-text,
+.project-link:hover .project-text {
+  transition: opacity 0.25s ease-out;
+}
+
+.project-link:hover .project-text {
+  opacity: 0.6;
+}
+
+.project-img img,
+.project-link:hover .project-img img {
+  transition: transform 0.25s ease-out;
+}
+
+.project-link:hover .project-img img {
+  transform: scale(1.05);
 }
