@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio 2026</title>
+    <title>Valérie Lapeyre — UX Researcher</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,18 +15,69 @@
   </head>
   <body>
     <header>
-      <div class="lang-toggle">
-        <button id="btn-fr" class="lang active" onclick="changeLang('fr')">
+      <div class="lang-switcher" role="group" aria-label="Langue">
+        <button
+          id="btn-fr"
+          class="lang-btn active"
+          aria-pressed="true"
+          onclick="changeLang('fr')"
+        >
           FR
         </button>
-        <span class="separator">|</span>
-        <button id="btn-en" class="lang" onclick="changeLang('en')">EN</button>
+        <span aria-hidden="true">|</span>
+        <button
+          id="btn-en"
+          class="lang-btn"
+          aria-pressed="false"
+          onclick="changeLang('en')"
+        >
+          EN
+        </button>
       </div>
     </header>
-    <h1 id="title">Valérie Lapeyre</h1>
-    <p id="subtitle1">UX Researcher</p>
-    <p id="subtitle2">En alternance chez Leetchi</p>
-    <h2 id="sectiontitle1">Présentation</h2>
-    <h2 id="sectiontitle2">Réalisations</h2>
+    <main>
+      <section class="hero">
+        <div class="hero-position">
+          <h1 id="hero-title">Valérie Lapeyre</h1>
+          <div class="hero-subs">
+            <p id="hero-sub1">UX Researcher</p>
+            <p id="hero-sub2">En alternance chez Leetchi</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" aria-label="Projets">
+        <article class="project">
+          <h2 id="project-title1" class="project-title">La boutique d'Elise</h2>
+          <p id="project-caption1" class="project-caption">Recherche UX</p>
+          <p id="project-description1" class="project-description">
+            Création du site de vente en ligne d’Elise, créatrice d’objets d’art
+            upcyclés
+          </p>
+          <p class="project-date">2026</p>
+        </article>
+        <article class="project">
+          <h2 id="project-title2" class="project-title">Mémoire</h2>
+          <p id="project-caption2" class="project-caption">
+            Mémoire de recherche
+          </p>
+          <p id="project-description2" class="project-description">
+            “Le glow up : réinvention de soi et besoin de validation à travers
+            l’apparence”
+          </p>
+          <p class="project-date">2025</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:valerie.lpyr@gmail.com">valerie.lpyr@gmail.com</a>
+        <a
+          href="https://linkedin.com/in/valerie-lapeyre-945000222"
+          rel="noopener noreferrer"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </address>
+    </footer>
   </body>
 </html>

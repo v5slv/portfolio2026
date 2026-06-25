@@ -7,7 +7,7 @@ function changeLang(langue) {
     });
   });
 
-  document.querySelectorAll(".lang").forEach((btn) => {
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.remove("active");
   });
 
