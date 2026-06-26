@@ -1,0 +1,130 @@
+/* MAIN - HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero-position {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26vh;
+  padding-top: 12vh;
+}
+
+.hero-title-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 8rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.hero-subs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hero-stroke {
+  width: 10rem;
+}
+
+/* MAIN - PROJECTS */
+
+.projects,
+.project,
+.project-text,
+.project-subs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.projects {
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.project {
+  gap: 1.75rem;
+}
+
+.project-stroke {
+  margin: 0.25rem 0 0.75rem 0;
+  width: 12rem;
+}
+
+.project-subs {
+  gap: 0.75rem;
+}
+
+.project-img {
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-caption {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 880px) {
+  .project {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .projects {
+    margin: 0 14%;
+    gap: 5rem;
+  }
+
+  .project-img {
+    width: 70%;
+    aspect-ratio: 1.6;
+  }
+
+  .project-text {
+    padding-right: 2rem;
+    width: 40%;
+  }
+}
+
+.project-text,
+.project-link:hover .project-text {
+  transition: opacity 0.25s ease-out;
+}
+
+.project-link:hover .project-text {
+  opacity: 0.5;
+}
+
+.project-img img,
+.project-link:hover .project-img img {
+  transition: transform 0.25s ease-out;
+}
+
+.project-link:hover .project-img img {
+  transform: scale(1.05);
+}
