@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  --font-gray: #a6a6a6;
+  --font-color-transition: color 0.2s ease-out;
 }
 
 body,
@@ -52,14 +55,20 @@ nav {
 a {
   color: black;
   font-style: normal;
+  transition: var(--font-color-transition);
 }
 
-ul {
-  justify-content: space-around;
+a:hover {
+  color: #a6a6a6;
+  transition: var(--font-color-transition);
 }
 
 li {
   list-style: none;
+}
+
+.separator {
+  font-size: 0.6rem;
 }
 
 /* HEADER */
@@ -67,34 +76,87 @@ li {
 header {
   width: 100%;
   display: flex;
-  padding: 1rem;
-  justify-content: flex-end;
+  padding: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 880px) {
+  header {
+    background: white;
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.4rem;
+  height: fit-content;
+  align-items: center;
+  color: var(--font-gray);
 }
 
 .lang-btn {
   border: none;
   background: none;
   cursor: pointer;
+  padding: 0;
+  color: var(--font-gray);
+  transition: var(--font-color-transition);
+}
 
-  &.active {
-    font-weight: 700;
-  }
+.lang-btn.active {
+  font-weight: 700;
+  color: black;
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+.lang-btn.active:hover {
+  cursor: default;
+}
+
+.lang-btn:hover:not(.active) {
+  color: black;
+  transition: var(--font-color-transition);
+}
+
+/* header {
+  align-items: center;
+  padding-top: 0.8rem;
+} */
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav .logo-top-link {
+  height: 1.25rem;
+}
+
+header nav .logo-top-link img {
+  width: 1.25rem;
+}
+
+header nav .logo-top-link:hover img {
+  transform: rotate(40deg);
+}
+
+header nav .logo-top-link img,
+header nav .logo-top-link:hover img {
+  transition: transform 0.25s ease-out;
 }
 
 /* FOOTER */
 
 footer {
   margin-top: 5vh;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--font-gray);
+  align-items: center;
 }
 
 footer address {
@@ -102,6 +164,15 @@ footer address {
   justify-content: center;
   gap: 1rem;
   font-style: normal;
+  align-items: center;
+}
+
+footer a {
+  color: var(--font-gray);
+}
+
+footer a:hover {
+  color: black;
 }
 
 @media screen and (max-width: 458px) {

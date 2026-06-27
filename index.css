@@ -111,15 +111,6 @@
   }
 }
 
-.project-text,
-.project-link:hover .project-text {
-  transition: opacity 0.25s ease-out;
-}
-
-.project-link:hover .project-text {
-  opacity: 0.5;
-}
-
 .project-img img,
 .project-link:hover .project-img img {
   transition: transform 0.25s ease-out;
