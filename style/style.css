@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  --font-gray: #919191;
+  --font-gray: #949494;
   --font-color-transition: color 0.2s ease-out;
   line-height: 1.2;
 }
