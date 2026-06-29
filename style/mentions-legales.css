@@ -1,0 +1,35 @@
+main {
+  max-width: 85ch;
+  gap: 0;
+  padding-top: 20vh;
+  align-items: flex-start;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+section {
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  padding: 10vh 0;
+}
+
+section:last-of-type {
+  border: none;
+}
+
+footer {
+  margin-top: 15vh;
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valérie Lapeyre — UX Researcher</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/mentions-legales.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="media/favicon-180.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html" class="logo-top-link"
+          ><img src="media/trefle-40.png" alt="Accueil"
+        /></a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Langue">
+        <button
+          id="btn-fr"
+          class="lang-btn active"
+          aria-pressed="true"
+          onclick="changeLang('fr')"
+        >
+          FR
+        </button>
+        <span aria-hidden="true" class="separator">✦</span>
+        <button
+          id="btn-en"
+          class="lang-btn"
+          aria-pressed="false"
+          onclick="changeLang('en')"
+        >
+          EN
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1>Mentions légales</h1>
+
+      <section>
+        <h2>Éditeur du site</h2>
+        <p>Valérie Lapeyre</p>
+        <p>
+          <a href="mailto:valerie.lpyr@gmail.com">valerie.lpyr@gmail.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Directrice de la publication</h2>
+        <p>Valérie Lapeyre</p>
+      </section>
+
+      <section>
+        <h2>Hébergement</h2>
+        <p>GitHub Inc.</p>
+        <p>88 Colin P. Kelly Jr. Street</p>
+        <p>San Francisco, CA 94107, États-Unis</p>
+        <p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            >github.com</a
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          L'ensemble du contenu de ce site (textes, visuels, illustrations) est
+          la propriété de Valérie Lapeyre, sauf mention contraire. Toute
+          reproduction est interdite sans autorisation préalable.
+        </p>
+      </section>
+
+      <section>
+        <h2>Données personnelles</h2>
+        <p>
+          Ce site ne collecte aucune donnée personnelle et n'a aucun cookie de
+          tracking.
+        </p>
+      </section>
+
+      <section>
+        <h2>Usage de l'intelligence artificielle</h2>
+        <p>
+          Les mentions légales ci-présentes et certains paragraphes des pages
+          projet ont été rédigées avec l'assistance de Claude (Anthropic), qui a
+          également été consulté ponctuellement pour du débogage lors du
+          développement du site web.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="/mentions-legales.html" rel="noopener noreferrer"
+        >Mentions légales</a
+      >
+      <span class="separator" aria-hidden="true">✦</span>
+      <address>
+        <a href="mailto:valerie.lpyr@gmail.com">valerie.lpyr@gmail.com</a>
+        <span class="separator" aria-hidden="true">✦</span>
+        <a
+          href="https://linkedin.com/in/valerie-lapeyre-945000222"
+          rel="noopener noreferrer"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>
