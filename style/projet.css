@@ -58,7 +58,7 @@ main {
   }
 
   .hero-container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +151,31 @@ p.contenu-sub {
   margin-bottom: 1.5rem;
 }
 
+.contenu-img,
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+.contenu-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  text-align: end;
+  font-style: italic;
+  margin: 0;
+  color: var(--font-gray);
+}
+
+/* VOIR LES AUTRES PROJETS */
+
+.next {
+  margin-bottom: 2rem;
+}
+
 .next a {
   border: 1px dashed #ffffff;
   background-color: #f2f2f2;
@@ -158,9 +183,6 @@ p.contenu-sub {
   justify-content: center;
   align-items: center;
   padding: 1.2rem;
-}
-
-.next a {
   font-size: 2rem;
   line-height: 1.1;
   text-align: center;
