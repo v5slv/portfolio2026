@@ -26,3 +26,12 @@ const savedLang = localStorage.getItem("lang");
 if (savedLang && savedLang !== "fr") {
   changeLang(savedLang);
 }
+
+// animation sur la home : se lance si 1ere visite
+if (document.querySelector(".hero-logo")) {
+  if (sessionStorage.getItem("intro-seen")) {
+    document.body.classList.add("no-intro");
+  } else {
+    sessionStorage.setItem("intro-seen", "1");
+  }
+}

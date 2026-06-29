@@ -122,3 +122,77 @@
 .project-link:hover .project-img img {
   transform: scale(1.05);
 }
+
+/* ANIMATIONS INTRO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* medallion généré par IA */
+@keyframes medallion {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  15% {
+    opacity: 1;
+    transform: rotate(18deg);
+  }
+  35% {
+    transform: rotate(-12deg);
+  }
+  52% {
+    transform: rotate(7deg);
+  }
+  67% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  91% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-logo {
+  animation: medallion 2.5s ease both;
+  transform-origin: 50% 0%;
+}
+
+.hero h1 {
+  animation: slideUpFade 1s ease both 1s;
+}
+
+.hero-subs,
+.projects,
+footer {
+  animation: fadeIn 1s ease both 1.5s;
+}
+
+body.no-intro .hero-logo,
+body.no-intro .hero h1,
+body.no-intro .hero-subs,
+body.no-intro .projects,
+body.no-intro footer {
+  animation: none;
+}
