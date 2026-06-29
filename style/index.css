@@ -22,6 +22,7 @@
 
 .hero-logo {
   width: 8rem;
+  height: auto;
   margin-bottom: 0.6rem;
 }
 
@@ -39,6 +40,7 @@
 
 .hero-stroke {
   width: 10rem;
+  height: auto;
 }
 
 /* MAIN - PROJECTS */
@@ -68,6 +70,7 @@
 .project-stroke {
   margin: 0.25rem 0 0.75rem 0;
   width: 12rem;
+  height: auto;
 }
 
 .project-subs {
