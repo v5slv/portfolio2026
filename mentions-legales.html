@@ -19,7 +19,7 @@
       type="image/x-icon"
     />
   </head>
-  <body>
+  <body data-page="mentions">
     <header>
       <nav>
         <a href="index.html" class="logo-top-link"
@@ -47,10 +47,10 @@
       </div>
     </header>
     <main>
-      <h1>Mentions légales</h1>
+      <h1 id="page-title">Mentions légales</h1>
 
       <section>
-        <h2>Éditeur du site</h2>
+        <h2 id="s1-title">Éditeur du site</h2>
         <p>Valérie Lapeyre</p>
         <p>
           <a href="mailto:valerie.lpyr@gmail.com">valerie.lpyr@gmail.com</a>
@@ -58,15 +58,15 @@
       </section>
 
       <section>
-        <h2>Directrice de la publication</h2>
+        <h2 id="s2-title">Directrice de la publication</h2>
         <p>Valérie Lapeyre</p>
       </section>
 
       <section>
-        <h2>Hébergement</h2>
+        <h2 id="s3-title">Hébergement</h2>
         <p>GitHub Inc.</p>
         <p>88 Colin P. Kelly Jr. Street</p>
-        <p>San Francisco, CA 94107, États-Unis</p>
+        <p id="s3-city">San Francisco, CA 94107, États-Unis</p>
         <p>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer"
             >github.com</a
@@ -75,8 +75,8 @@
       </section>
 
       <section>
-        <h2>Propriété intellectuelle</h2>
-        <p>
+        <h2 id="s4-title">Propriété intellectuelle</h2>
+        <p id="s4-p">
           L'ensemble du contenu de ce site (textes, visuels, illustrations) est
           la propriété de Valérie Lapeyre, sauf mention contraire. Toute
           reproduction est interdite sans autorisation préalable.
@@ -84,16 +84,16 @@
       </section>
 
       <section>
-        <h2>Données personnelles</h2>
-        <p>
+        <h2 id="s5-title">Données personnelles</h2>
+        <p id="s5-p">
           Ce site ne collecte aucune donnée personnelle et n'a aucun cookie de
           tracking.
         </p>
       </section>
 
       <section>
-        <h2>Usage de l'intelligence artificielle</h2>
-        <p>
+        <h2 id="s6-title">Usage de l'intelligence artificielle</h2>
+        <p id="s6-p">
           Les mentions légales ci-présentes et certains paragraphes des pages
           projet ont été rédigées avec l'assistance de Claude (Anthropic), qui a
           également été consulté ponctuellement pour du débogage lors du
@@ -102,7 +102,7 @@
       </section>
     </main>
     <footer>
-      <a href="/mentions-legales.html" rel="noopener noreferrer"
+      <a href="/mentions-legales.html" rel="noopener noreferrer" id="footer-mentions"
         >Mentions légales</a
       >
       <span class="separator" aria-hidden="true">✦</span>
