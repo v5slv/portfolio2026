@@ -9,6 +9,6 @@
   "s5-title": "Données personnelles",
   "s5-p": "Ce site ne collecte aucune donnée personnelle et n'a aucun cookie de tracking.",
   "s6-title": "Usage de l'intelligence artificielle",
-  "s6-p": "Les mentions légales ci-présentes et certains paragraphes des pages projet ont été rédigées avec l'assistance de Claude (Anthropic), qui a également été consulté ponctuellement pour du débogage lors du développement du site web.",
+  "s6-p": "Les mentions légales ci-présentes et certains paragraphes des pages projet ont été rédigées avec l'assistance de Claude (Anthropic), qui a également été consulté ponctuellement pour de l'assistance lors du développement du site web (debug et code généré avec commentaires dans le code source).",
   "footer-mentions": "Mentions légales"
 }
